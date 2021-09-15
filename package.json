@@ -1,0 +1,30 @@
+{
+  "name": "crud-on-json",
+  "version": "1.0.0",
+  "description": "This repository aims to try crud operations on JSON data. And let user update data with help of form.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/app.js",
+    "dev": "nodemon ./src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rohan-kulkarni-25/crud-on-json.git"
+  },
+  "author": "Rohan Kulkarni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rohan-kulkarni-25/crud-on-json/issues"
+  },
+  "homepage": "https://github.com/rohan-kulkarni-25/crud-on-json#readme",
+  "dependencies": {
+    "@octokit/rest": "^18.10.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "gh-account-exists": "^0.1.0",
+    "node-fetch": "^3.0.0",
+    "path": "^0.12.7",
+    "pug": "^3.0.2"
+  }
+}

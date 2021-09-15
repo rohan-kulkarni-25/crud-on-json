@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+  <title>Add Your Profile</title>
+</head>
+
+<body style="background-color: rgb(9, 44, 90);">
+  <div class="container p-5" style=" margin-top: 5rem; border: 1px solid white; background-color: white; width: fit-content; min-width: 40rem; border-radius: 9px;">
+    <form action="/addprofile" method="post">
+      <div class="mb-3">
+        <label class="form-label" for="name">NAME</label>
+        <input class="form-control" name="name" type="text" placeholder="Eddie Jaoude" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="bio">BIO</label>
+        <input class="form-control" name="bio" type="text" placeholder="Founder of EddieHub">
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="github">GITHUB</label>
+        <input class="form-control" name="github" type="text" placeholder="http://github.com/eddiejaoude" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="twitter">TWITTER</label>
+        <input class="form-control" name="twitter" type="text" placeholder="https://twitter.com/eddiejaoude">
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="linkedin">LINKEDIN</label>
+        <input class="form-control" name="linkedin" type="text" placeholder="https://www.linkedin.com/in/eddiejaoude/">
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="youtube">YOUTUBE CHANNEL</label>
+        <input class="form-control" name="youtube" type="text" placeholder="https://www.youtube.com/c/eddiejaoude">
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+        <label class="form-check-label" for="exampleCheck1">Provided Links are valid.</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Add your Profile</button>
+    </form>
+  </div>
+</body>
+
+</html>
