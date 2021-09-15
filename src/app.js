@@ -8,7 +8,7 @@ const dotenv = require('dotenv').config();
 
 
 app.use(express.json());
-app.use(express.urlencoded());
+app.use(express.urlencoded({ extended: true }))
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
@@ -67,9 +67,14 @@ app.post('/addprofile', (req, res) => {
           }
           res.status(201).render(`${__dirname}/views/formsubmit.pug`)
           const jsonString = JSON.stringify(profileObject)
-          fs.writeFileSync(`${__dirname}/data/${githubUsername}.json`, jsonString, (err) => {
-            console.log('Something went wrong while creating file! Please check again');
-          })
+          fs.writeFile(`${__dirname}/data/${githubUsername}.json`, jsonString, (err) => {
+            if (err) {
+              console.log('Something went wrong while creating file! Please check again');
+            }
+            else {
+              console.log('File Created');
+            }
+          });
         }
         else {
           res.send('Please Enter a valid Github Username');
