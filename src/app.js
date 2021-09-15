@@ -4,7 +4,7 @@ const fs = require('fs');
 const pug = require('pug');
 const path = require('path');
 const fetch = (...args) => import('node-fetch').then(({ default: fetch }) => fetch(...args));
-
+const dotenv = require('dotenv').config();
 
 
 app.use(express.json());
